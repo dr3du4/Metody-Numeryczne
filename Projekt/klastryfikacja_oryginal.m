@@ -6,9 +6,12 @@ klastryfikacja(y,fs);
 zaszumiony=zaszumienie(y,fs);
 klastryfikacja(zaszumiony,fs);
 
+%player = audioplayer(zaszumiony, fs);
+%play(player);
+
 sygnalOdszumiony=usuniecieSzumu(y,zaszumiony,fs);
 klastryfikacja(sygnalOdszumiony, fs);
-sound(sygnalOdszumiony);
 
-
+player = audioplayer(sygnalOdszumiony, fs);
+play(player);
 
