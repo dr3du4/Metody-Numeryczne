@@ -1,5 +1,5 @@
 % Wczytaj plik dźwiękowy
-nazwaPliku = 'burzum.mp3';
+nazwaPliku = 'nasza_probka.mp3';
 [y, fs] = audioread(nazwaPliku);
 
 klastryfikacja(y,fs);

@@ -6,7 +6,7 @@ function [y,fs,y_z_szumem] = usuniecieSzumu(y,y_z_szumem,fs)
     najlepszy_rozmiar_okna_filtra = 0;
     
     % Sprawdź różne rozmiary okna filtra
-    for rozmiar_okna_filtra = 1:2:21  % Różne nieparzyste rozmiary okna filtra
+    for rozmiar_okna_filtra = 101:2:201  % Różne nieparzyste rozmiary okna filtra
         % Odszumianie sygnału
         sygnal_odszumiony = odszumianie(y_z_szumem, rozmiar_okna_filtra);
     
