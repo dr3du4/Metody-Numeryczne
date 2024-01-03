@@ -1,4 +1,4 @@
-% Wczytaj plik dźwiękowy
+% glowny plik programu
 nazwaPliku = 'nasza_probka.mp3';
 [y, fs] = audioread(nazwaPliku);
 
